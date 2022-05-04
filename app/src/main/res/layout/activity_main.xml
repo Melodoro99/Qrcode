@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text="Name :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/studentid"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ln2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text="Student Id :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentidname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnn2"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/studentid"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Activity :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnn3"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lnn2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Lecturer :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnn4"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lnn3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Room :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#111"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lnn4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Status:"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#55DF50"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/tick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/tick"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ln3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Date :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#020000"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ln4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Class Time :"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln4"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/scanbtn"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round"
+            android:drawableLeft="@drawable/ic_baseline_qr_code_24"
+            android:padding="8dp"
+            android:text="Scan Now"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:onClick="present"
+            android:text="Save"
+            android:textColor="#111"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:layout_height="100dp"-->
+
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:onClick="block"-->
+        <!--            android:src="@drawable/close"-->
+        <!--            android:textColor="#111"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="90dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Block"-->
+        <!--            android:textColor="#111"-->
+        <!--            android:textSize="20dp"-->
+        <!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>
